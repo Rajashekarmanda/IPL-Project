@@ -39,6 +39,7 @@ csv()
                 let balls = 1
 
                 if (runsOfEachBowler[bowler]){
+                    
                     runsOfEachBowler[bowler].runs += runs
 
                     runsOfEachBowler[bowler].balls += balls
