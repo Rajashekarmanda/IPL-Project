@@ -58,33 +58,31 @@ csv()
 
             // pushing all fetched data into result array
 
-            matchesPerYearArr.push({ '2008': matchesIn2008Array, matchesCount: matchesIn2008Array.length },
-                { '2009': matchesIn2009Array, matchesCount: matchesIn2009Array.length },
-                { '2010': matchesIn2010Array, matchesCount: matchesIn2010Array.length },
-                { '2011': matchesIn2011Array, matchesCount: matchesIn2011Array.length },
-                { '2012': matchesIn2012Array, matchesCount: matchesIn2012Array.length },
-                { '2013': matchesIn2013Array, matchesCount: matchesIn2013Array.length },
-                { '2014': matchesIn2014Array, matchesCount: matchesIn2014Array.length },
-                { '2015': matchesIn2015Array, matchesCount: matchesIn2015Array.length },
-                { '2016': matchesIn2016Array, matchesCount: matchesIn2016Array.length },
-                { '2017': matchesIn2017Array, matchesCount: matchesIn2017Array.length }
+            // matchesPerYearArr.push({ '2008': matchesIn2008Array, matchesCount: matchesIn2008Array.length },
+            //     { '2009': matchesIn2009Array, matchesCount: matchesIn2009Array.length },
+            //     { '2010': matchesIn2010Array, matchesCount: matchesIn2010Array.length },
+            //     { '2011': matchesIn2011Array, matchesCount: matchesIn2011Array.length },
+            //     { '2012': matchesIn2012Array, matchesCount: matchesIn2012Array.length },
+            //     { '2013': matchesIn2013Array, matchesCount: matchesIn2013Array.length },
+            //     { '2014': matchesIn2014Array, matchesCount: matchesIn2014Array.length },
+            //     { '2015': matchesIn2015Array, matchesCount: matchesIn2015Array.length },
+            //     { '2016': matchesIn2016Array, matchesCount: matchesIn2016Array.length },
+            //     { '2017': matchesIn2017Array, matchesCount: matchesIn2017Array.length }
+            // )
+
+            matchesPerYearArr.push({ '2008': matchesIn2008Array.length },
+                { '2009':  matchesIn2009Array.length },
+                { '2010':  matchesIn2010Array.length },
+                { '2011':  matchesIn2011Array.length },
+                { '2012':  matchesIn2012Array.length },
+                { '2013': matchesIn2013Array.length },
+                { '2014':  matchesIn2014Array.length },
+                { '2015':  matchesIn2015Array.length },
+                { '2016': matchesIn2016Array.length },
+                { '2017':matchesIn2017Array.length }
             )
 
-            // console.log(matchesPerYearArr)
-
-            let year = 2008
-            let count = 0
-
-
-            // we can see matches per year count below by for-loop
-
-            for (let each of matchesPerYearArr) {               
-
-                console.log(`${each.matchesCount} matches per year - ${year + count}`)
-
-                count += 1
-            }
-
+            console.log(matchesPerYearArr)
 
             // converting array of objects into JSON & storing result data in output / 1-matches-per-year.json file 
 
